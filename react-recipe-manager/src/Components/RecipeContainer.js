@@ -1,10 +1,14 @@
-import React from 'react'
-import RecipeCard from './RecipeCard'
+import React from 'react';
+import RecipeCard from './RecipeCard';
 
-function RecipeContainer() {
+function RecipeContainer({ recipes }) {
     return (
         <div>RecipeContainer
-            <RecipeCard />
+            {recipes.map((recipe) => {
+                return(
+                    <RecipeCard key={recipe.id} recipe={recipe} />
+                )
+            })}
         </div>
     )
 }
