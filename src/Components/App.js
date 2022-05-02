@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Search from './Search';
 import RecipeContainer from './RecipeContainer';
 
+
 function App() {
   const [recipes, setRecipes] = useState([]);
 

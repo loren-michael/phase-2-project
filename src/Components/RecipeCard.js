@@ -1,16 +1,16 @@
 import React from 'react';
-import { Card } from "semantic-ui-react";
+// import { Card } from "semantic-ui-react";
 
 
 function RecipeCard({ recipe }) {
     return (
-        <Card>
+        // <Card>
             <div className="recipeCard" >
                 <h4>{recipe.name}</h4>
                 <img src={recipe.img} alt={recipe.name} />
             </div>
-        </Card>
+        // </Card>
     )
-}
+};
 
 export default RecipeCard
